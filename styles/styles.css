@@ -278,3 +278,14 @@ main .section {
 main .section.highlight {
 	background-color: var(--highlight-background-color);
 }
+
+main .section.customsection {
+	background-color: aquamarine;
+}
+
+main .section.day3-assignment1 {
+	border-radius: 6px;
+	color: chocolate;
+	border: 3px solid tomato;
+	background-color: bisque;
+}

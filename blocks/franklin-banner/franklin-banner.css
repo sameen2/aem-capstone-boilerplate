@@ -1,0 +1,19 @@
+.franklin-banner {
+	padding: 8px;
+	color: brown;
+	margin-top: 8px;
+	border-radius: 4px;
+	display: inline-block;
+	background-color: antiquewhite;
+}
+
+.franklin-banner p {
+	margin: 2px 0;
+	color: gray;
+	font-size: 10px;
+	font-style: oblique;
+}
+
+.franklin-banner picture img {
+	width: 340px;
+}
