@@ -1,0 +1,26 @@
+.form {
+}
+
+.form input {
+	border-color: gray;
+}
+
+.form input:hover {
+	border-color: violet;
+}
+
+.form input[type="checkbox"] {
+	width: auto;
+	display: initial;
+	width: 24px;
+	height: 24px;
+	padding: 0;
+	margin: 0;
+	margin-right: 8px;
+}
+
+.form label {
+	display: flex;
+	cursor: pointer;
+	align-items: center;
+}

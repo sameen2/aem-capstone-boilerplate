@@ -182,6 +182,10 @@ button {
 	overflow: hidden;
 	text-overflow: ellipsis;
 	border-radius: 30px;
+	background-image: url(../icons/compass.svg);
+	background-repeat: no-repeat;
+	background-size: 160px;
+	background-position: 70px -1px;
 }
 
 a.button:hover,
