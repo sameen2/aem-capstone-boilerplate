@@ -83,18 +83,29 @@ const onFormSubmit = (event) => {
 	}
 	if (!error) {
 		const payload = {
-			name: name.value.trim(),
-			emailId: email.value.trim(),
-			experience: experience.value,
-			comments: comments.value.trim(),
+			data: {
+				name: name.value.trim(),
+				emailId: email.value.trim(),
+				experience: experience.value,
+				comments: comments.value.trim(),
+			},
 		};
-		console.log("payload :: ", payload);
 		fetch("/email-form", {
 			method: "POST",
 			body: JSON.stringify(payload),
 			headers: {
 				"Content-Type": "application/json",
 			},
+		}).then((response) => {
+			if (
+				(response.status === 200 || response.status === 201) &&
+				response.ok
+			) {
+				name.value = "";
+				email.value = "";
+				comments.value = "";
+				experience.value = "";
+			}
 		});
 	}
 };
